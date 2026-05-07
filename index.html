@@ -497,7 +497,7 @@
   </div>
 
   <div class="footer">
-    <p>Click any element for definition and curated references · Inspired by Jérôme Kehrli (2017) and the original periodic table format · 100 concepts</p>
+    <p>Click any element for definition and curated references · Inspired by Jérôme Kehrli (2017) and the original periodic table format · 117 concepts across six eras</p>
     <p>Created by <a href="https://www.linkedin.com/in/ozrenc/" target="_blank" rel="noopener noreferrer">Ozren Crnogorac</a></p>
   </div>
 </div>
@@ -697,11 +697,11 @@ const elements = [
      { type: 'Article', title: 'What is an Epic? — Atlassian', url: 'https://www.atlassian.com/agile/project-management/epics' },
      { type: 'Article', title: 'Epics vs Features vs Stories — Scaled Agile', url: 'https://scaledagileframework.com/epic/' }]],
 
-  [26, 'Tm', 'Theme',             3, 16, 'agile',
-    'A grouping of related epics aligned to a strategic objective or capability area.',
-    [{ type: 'Article', title: 'Stories, Epics & Themes — Mike Cohn', url: 'https://www.mountaingoatsoftware.com/blog/stories-epics-and-themes' },
-     { type: 'Article', title: 'Themes vs Epics vs Stories — Atlassian', url: 'https://www.atlassian.com/agile/project-management/epics-stories-themes' },
-     { type: 'Book', title: 'Agile Estimating and Planning — Mike Cohn', url: 'https://www.mountaingoatsoftware.com/books/agile-estimating-and-planning' }]],
+  [26, 'Tg', 'Team Topologies', 3, 16, 'scaling',
+    'Four fundamental team types — stream-aligned, platform, enabling, complicated-subsystem — and three interaction modes (collaboration, X-as-a-Service, facilitating). A model for organizing teams for fast flow of value. Skelton & Pais, 2019.',
+    [{ type: 'Site',    title: 'teamtopologies.com',                              url: 'https://teamtopologies.com/' },
+     { type: 'Book',    title: 'Team Topologies — Skelton & Pais (IT Revolution)', url: 'https://itrevolution.com/product/team-topologies/' },
+     { type: 'Concepts', title: 'Key concepts',                                    url: 'https://teamtopologies.com/key-concepts-content/team-topologies-key-concepts' }]],
 
   [27, 'Sg', 'Sprint goal',       3, 17, 'scrum',
     'The single objective for a Sprint that gives the team coherence and a reason to work together. Lifts work above a checklist of items.',
@@ -1149,7 +1149,103 @@ const elements = [
     'A shared belief that the team is safe for interpersonal risk-taking. Identified by Amy Edmondson as the strongest predictor of team performance.',
     [{ type: 'Book', title: 'The Fearless Organization — Amy Edmondson', url: 'https://fearlessorganization.com/the-fearless-organization' },
      { type: 'Research', title: 'Project Aristotle — Google re:Work', url: 'https://rework.withgoogle.com/print/guides/5721312655835136/' },
-     { type: 'TED', title: 'Building a psychologically safe workplace — Amy Edmondson', url: 'https://www.ted.com/talks/amy_edmondson_how_to_turn_a_group_of_strangers_into_a_team' }]]
+     { type: 'TED', title: 'Building a psychologically safe workplace — Amy Edmondson', url: 'https://www.ted.com/talks/amy_edmondson_how_to_turn_a_group_of_strangers_into_a_team' }]],
+
+  [101,'Mq', 'Modern Agile',      1, 4,  'agile',
+    'Joshua Kerievsky\'s 2016 reframing: four guiding principles — Make People Awesome, Make Safety a Prerequisite, Experiment & Learn Rapidly, Deliver Value Continuously. Reaction to ceremony-heavy Agile.',
+    [{ type: 'Site',    title: 'modernagile.org',                            url: 'https://modernagile.org/' },
+     { type: 'Article', title: 'Modern Agile — Industrial Logic',            url: 'https://www.industriallogic.com/blog/modern-agile/' },
+     { type: 'Talk',    title: 'Joshua Kerievsky — Agile 2016 keynote',      url: 'https://www.youtube.com/watch?v=lOG8m7T58vg' }]],
+
+  [102,'Ha', 'Heart of Agile',    1, 5,  'agile',
+    'Alistair Cockburn\'s 2016 stripped-back model: four imperatives — Collaborate, Deliver, Reflect, Improve. Pushes back on framework bloat by reframing Agile around essence.',
+    [{ type: 'Site',    title: 'heartofagile.com',                           url: 'https://heartofagile.com/' },
+     { type: 'Article', title: 'Heart of Agile — the name',                  url: 'https://heartofagile.com/heart-of-agile-the-name/' },
+     { type: 'Talk',    title: 'Cockburn — Heart of Agile (Agile2016)',      url: 'https://www.youtube.com/watch?v=lYW4LcMv76o' }]],
+
+  [103,'Wm', 'Wardley map',       1, 6,  'metrics',
+    'Simon Wardley\'s strategy maps: components plotted against value-chain visibility (Y) and evolution stage (X: genesis → custom → product → commodity). Tool for situational awareness and strategic play.',
+    [{ type: 'Book',    title: 'Wardley Maps (free, online) — Simon Wardley', url: 'https://medium.com/wardleymaps' },
+     { type: 'Site',    title: 'Learn Wardley Mapping',                      url: 'https://learnwardleymapping.com/' },
+     { type: 'Wiki',    title: 'Wardley map',                                url: 'https://en.wikipedia.org/wiki/Wardley_map' }]],
+
+  [104,'Da', 'DORA',               1, 7,  'metrics',
+    'Four research-backed delivery metrics — Deployment Frequency, Lead Time for Changes, Change Failure Rate, Mean Time to Restore — from the DORA program (Forsgren, Humble, Kim). Now part of Google Cloud, with annual State of DevOps reports.',
+    [{ type: 'Site',    title: 'dora.dev',                                   url: 'https://dora.dev/' },
+     { type: 'Book',    title: 'Accelerate — Forsgren, Humble, Kim',         url: 'https://itrevolution.com/product/accelerate/' },
+     { type: 'Report',  title: 'State of DevOps Report (Google Cloud)',      url: 'https://cloud.google.com/devops/state-of-devops' }]],
+
+  [105,'Pa', 'Agile is Dead',     1, 2,  'agile',
+    'Critique pushed by Dave Thomas, Andy Hunt, Allen Holub: "Agile" the noun has been hijacked by certifications, frameworks and consultants. Reclaim "agility" the verb — the original adjective from the Manifesto.',
+    [{ type: 'Blog',    title: 'Agile is Dead (Long Live Agility) — Dave Thomas', url: 'https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html' },
+     { type: 'Talk',    title: 'Dave Thomas — Agile is Dead (GOTO 2015)',     url: 'https://www.youtube.com/watch?v=a-BOSpxYJ9M' },
+     { type: 'Talk',    title: 'Allen Holub — Death of Agile / Scrum',        url: 'https://www.youtube.com/watch?v=2u0sNWGJqyM' }]],
+
+  [106,'Fx', 'Faux Agile',         1, 3,  'agile',
+    'Martin Fowler\'s 2018 critique: most enterprise "Agile" is faux-Agile / dark Agile / cargo-cult — a hollow Agile Industrial Complex selling certifications and processes instead of agility.',
+    [{ type: 'Article', title: 'The State of Agile in 2018 — Martin Fowler',  url: 'https://martinfowler.com/articles/agile-aus-2018.html' },
+     { type: 'Talk',    title: 'Fowler — State of Agile (Agile Australia)',   url: 'https://www.youtube.com/watch?v=3wgJ7IkCH0w' },
+     { type: 'Article', title: 'Agile Industrial Complex — Steve Denning',    url: 'https://www.forbes.com/sites/stevedenning/2019/01/13/understanding-fake-agile/' }]],
+
+  [107,'Bv', 'BVSSH',              1, 13, 'agile',
+    'Better Value Sooner Safer Happier — Jonathan Smart\'s outcomes-led principles (2020). Focus on outcomes over output, applied to ways of working at scale.',
+    [{ type: 'Book',    title: 'Sooner Safer Happier — Jonathan Smart (IT Revolution)', url: 'https://itrevolution.com/product/sooner-safer-happier/' },
+     { type: 'Site',    title: 'soonersaferhappier.com',                       url: 'https://www.soonersaferhappier.com/' },
+     { type: 'Article', title: 'BVSSH overview — IT Revolution',               url: 'https://itrevolution.com/articles/the-five-principles-behind-bvssh/' }]],
+
+  [108,'Cn', 'Continuous Discovery', 1, 14, 'agile',
+    'Teresa Torres\' habit-based product discovery practice (2021): weekly customer interviews, opportunity-solution trees, assumption tests. Sustained learning beats one-off research.',
+    [{ type: 'Book',    title: 'Continuous Discovery Habits — Teresa Torres',  url: 'https://www.producttalk.org/continuous-discovery-habits/' },
+     { type: 'Site',    title: 'Product Talk — Teresa Torres',                 url: 'https://www.producttalk.org/' },
+     { type: 'Article', title: 'What is Continuous Discovery?',                url: 'https://www.producttalk.org/2021/08/continuous-discovery/' }]],
+
+  [109,'Ai', 'AI-augmented dev',   1, 15, 'xp',
+    'Pair-programming with AI assistants — GitHub Copilot (2021), Cursor, Claude Code, agentic IDEs. DORA 2024 report tracks adoption shifts; reshapes flow, review, and skill-acquisition.',
+    [{ type: 'Launch',  title: 'GitHub Copilot launch (2021)',                 url: 'https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/' },
+     { type: 'Tool',    title: 'Claude Code — Anthropic',                      url: 'https://www.anthropic.com/claude-code' },
+     { type: 'Report',  title: 'DORA 2024 — Impact of AI on software delivery', url: 'https://cloud.google.com/devops/state-of-devops' }]],
+
+  [110,'Cg', 'Cognitive load',     1, 16, 'scaling',
+    'Sweller\'s 1988 cognitive-load theory applied to teams by Skelton & Pais — design team boundaries, scope, and tooling to keep load manageable. Three types: intrinsic, extraneous, germane.',
+    [{ type: 'Concepts', title: 'Limit team cognitive load — Team Topologies', url: 'https://teamtopologies.com/key-concepts-content/limit-team-cognitive-load' },
+     { type: 'Wiki',     title: 'Cognitive load theory — John Sweller',        url: 'https://en.wikipedia.org/wiki/Cognitive_load' },
+     { type: 'Article',  title: 'Cognitive load and Team Topologies — IT Revolution', url: 'https://itrevolution.com/articles/cognitive-load-team-topologies/' }]],
+
+  [111,'Ot', 'Org Topologies',     1, 17, 'scaling',
+    'Roland Flemm & Alexey Krivitsky (2022) — diagnostic map of organizational designs from component teams to value-stream-led. Companion to Team Topologies; explicit critique of cargo-cult Agile maturity.',
+    [{ type: 'Site',    title: 'orgtopologies.com',                            url: 'https://www.orgtopologies.com/' },
+     { type: 'Articles', title: 'Org Topologies articles',                     url: 'https://www.orgtopologies.com/articles' },
+     { type: 'LinkedIn', title: 'Org Topologies on LinkedIn',                  url: 'https://www.linkedin.com/company/org-topologies/' }]],
+
+  [112,'Sa', 'Stream-aligned',     2, 3,  'scaling',
+    'Team Topologies\' default team type — aligned to a single stream of work (product, service, user segment, geography). Owns end-to-end flow for that stream. Most teams should be this type.',
+    [{ type: 'Concepts', title: 'Team types — Team Topologies',                url: 'https://teamtopologies.com/key-concepts-content/team-topologies-key-concepts' },
+     { type: 'Book',     title: 'Team Topologies — Skelton & Pais',            url: 'https://itrevolution.com/product/team-topologies/' }]],
+
+  [113,'Pf', 'Platform team',      2, 4,  'scaling',
+    'Team Topologies — provides internal self-service capabilities (CI/CD, infra, observability, IDP) as a product to stream-aligned teams. Reduces their cognitive load. Closely tied to the Platform Engineering movement.',
+    [{ type: 'Concepts', title: 'Team types — Team Topologies',                url: 'https://teamtopologies.com/key-concepts-content/team-topologies-key-concepts' },
+     { type: 'Article',  title: 'Platform thinking — Martin Fowler',           url: 'https://martinfowler.com/articles/talk-summaries/platform-thinking.html' }]],
+
+  [114,'En', 'Enabling team',      2, 5,  'scaling',
+    'Team Topologies — short-lived team that helps stream-aligned teams overcome a specific knowledge gap (testing, security, performance, ML). Coaches, not gatekeepers; dissolves when capability transfers.',
+    [{ type: 'Concepts', title: 'Team types — Team Topologies',                url: 'https://teamtopologies.com/key-concepts-content/team-topologies-key-concepts' }]],
+
+  [115,'Cs', 'Complicated-subsystem', 2, 6,  'scaling',
+    'Team Topologies — owns a part of the system requiring deep specialist knowledge (ML model, video codec, mathematical algorithm). Reduces cognitive load on stream-aligned teams that depend on it.',
+    [{ type: 'Concepts', title: 'Team types — Team Topologies',                url: 'https://teamtopologies.com/key-concepts-content/team-topologies-key-concepts' }]],
+
+  [116,'Uf', 'unFix',              2, 7,  'scaling',
+    'Jurgen Appelo\'s modular org-design pattern library (2021). Teams, crews, bases, forums, governance — mix-and-match alternative to one-size-fits-all scaling frameworks.',
+    [{ type: 'Site',    title: 'unfix.com',                                    url: 'https://unfix.com/' },
+     { type: 'Article', title: 'About the unFix model',                        url: 'https://unfix.com/about-the-unfix-model' },
+     { type: 'Books',   title: 'unFix books — Jurgen Appelo',                  url: 'https://unfix.com/books' }]],
+
+  [117,'Fv', 'Flight Levels',      2, 8,  'scaling',
+    'Klaus Leopold\'s coordination model: visualise and manage flow at three levels — strategic portfolio (3), coordination (2), operational (1). Lean-Kanban-flavoured alternative to SAFe-style scaling.',
+    [{ type: 'Site',    title: 'flightlevels.io',                              url: 'https://www.flightlevels.io/' },
+     { type: 'Book',    title: 'Rethinking Agile — Klaus Leopold',             url: 'https://leanability.com/en/books/rethinking-agile-en/' },
+     { type: 'Article', title: 'Flight Levels — David J. Anderson',            url: 'https://www.djaa.com/flight-levels-leopold/' }]]
 ];
 
 const eraMap = {
@@ -1158,24 +1254,25 @@ const eraMap = {
   9:2, 34:2, 47:2, 51:2, 85:2, 90:2,
   1:3, 2:3, 3:3, 5:3, 6:3, 7:3, 8:3, 11:3, 12:3, 13:3,
   14:3, 15:3, 16:3, 17:3, 18:3, 19:3, 20:3, 21:3, 22:3, 23:3,
-  24:3, 25:3, 26:3, 27:3, 38:3, 39:3, 40:3, 49:3, 50:3, 52:3,
+  24:3, 25:3, 27:3, 38:3, 39:3, 40:3, 49:3, 50:3, 52:3,
   54:3, 55:3, 56:3, 57:3, 58:3, 59:3, 60:3, 61:3, 62:3, 63:3,
   64:3, 96:3, 99:3,
   29:4, 30:4, 31:4, 35:4, 36:4, 37:4, 41:4, 42:4, 43:4, 44:4,
   45:4, 46:4, 48:4, 53:4, 65:4, 66:4, 68:4, 69:4, 70:4, 71:4,
   72:4, 73:4, 74:4, 75:4, 94:4, 95:4, 97:4,
-  67:5, 93:5, 98:5, 100:5,
-  28:6
+  67:5, 93:5, 98:5, 100:5, 101:5, 102:5, 103:5, 104:5,
+  26:6, 28:6, 105:6, 106:6, 107:6, 108:6, 109:6, 110:6, 111:6,
+  112:6, 113:6, 114:6, 115:6, 116:6, 117:6
 };
 
 const eras = [
-  { id: 0, label: 'All',                                years: 'Master view', desc: 'Every concept across all eras. Default view.',                                       count: 100 },
-  { id: 1, label: 'TPS / Lean roots',                   years: '1950s–70s',   desc: 'Toyota Production System. Ohno, Toyoda, Deming. JIT, Jidoka, Kaizen, Kanban, 5S.',  count: 19 },
-  { id: 2, label: 'Lean global + lightweight methods',  years: '1980–2000',   desc: 'Womack/Jones, Goldratt, XP, Fowler. Value, VSM, A3, pair prog, refactor.',          count: 25 },
-  { id: 3, label: 'Agile Manifesto era',                years: '2001–2007',   desc: '17 signatories. Scrum, XP mainstream. TDD, CI, user stories, retro, planning poker.', count: 68 },
-  { id: 4, label: 'Lean-Agile fusion + Startup',        years: '2008–2014',   desc: 'Anderson Kanban, Ries, SAFe, Spotify. MVP, CFD, CD, ART, squads, story map.',       count: 95 },
-  { id: 5, label: 'Scaling + DevOps maturity',          years: '2014–2019',   desc: 'Nexus, OKR adoption, DORA, Edmondson. Psych. safety, swarming.',                    count: 99 },
-  { id: 6, label: 'Product-led / Post-Agile',           years: '2020–now',    desc: 'Scrum Guide 2020, Team Topologies, FinOps, AI-augmented dev. Product goal.',        count: 100 }
+  { id: 0, label: 'All',                                years: 'Master view', desc: 'Every concept across all eras. Default view.',                                          count: 117 },
+  { id: 1, label: 'TPS / Lean roots',                   years: '1950s–70s',   desc: 'Toyota Production System. Ohno, Toyoda, Deming. JIT, Jidoka, Kaizen, Kanban, 5S.',     count: 19 },
+  { id: 2, label: 'Lean global + lightweight methods',  years: '1980–2000',   desc: 'Womack/Jones, Goldratt, XP, Fowler. Value, VSM, A3, pair prog, refactor.',             count: 25 },
+  { id: 3, label: 'Agile Manifesto era',                years: '2001–2007',   desc: '17 signatories. Scrum, XP mainstream. TDD, CI, user stories, retro, planning poker.',  count: 67 },
+  { id: 4, label: 'Lean-Agile fusion + Startup',        years: '2008–2014',   desc: 'Anderson Kanban, Ries, SAFe, Spotify. MVP, CFD, CD, ART, squads, story map.',          count: 94 },
+  { id: 5, label: 'Scaling + DevOps maturity',          years: '2014–2019',   desc: 'DORA, Modern Agile, Heart of Agile, Wardley map, Nexus, OKR, psych. safety.',          count: 102 },
+  { id: 6, label: 'Product-led / Post-Agile',           years: '2020–now',    desc: 'Team Topologies, Org Topologies, unFix, Flight Levels, "Agile is Dead", Faux Agile, BVSSH, Continuous Discovery, AI-augmented dev.', count: 117 }
 ];
 
 let currentFilter = 'all';
